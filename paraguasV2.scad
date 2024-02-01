@@ -1,5 +1,5 @@
 anchoPalmar=95;
-
+aP=anchoPalmar/2;
 
 
 module rosca (){
@@ -28,9 +28,9 @@ cylinder(h=11,r=4.5,center=false, $fn=120);
 
 
 difference(){
-translate([0,0,anchoPalmar])
+translate([0,0,aP])
 scale([0.7,0.7,1])
-sphere(anchoPalmar,$fn=15);
+sphere(aP,$fn=15);
 rosca();
 }
 
